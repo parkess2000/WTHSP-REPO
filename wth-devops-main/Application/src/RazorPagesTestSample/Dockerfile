@@ -14,3 +14,5 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:latest
 WORKDIR /app
 COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "RazorPagesTestSample.dll"]
+
+# Build the Docker image - remove this comment
